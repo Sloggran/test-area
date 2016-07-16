@@ -2,7 +2,6 @@ group 'de.sloggran.testingArea'
 version '0.0.1'
 
 apply plugin: 'java'
-apply plugin: 'ecplipse'
 apply plugin: 'application'
 
 //mainClassName = 'place of mainclass'
@@ -10,6 +9,10 @@ apply plugin: 'application'
 defaultTasks 'run'
 
 build.dependsOn 'installDist'
+
+task wrapper(type: Wrapper){
+    gradleVersion = ''
+}
 
 repositories {
     mavenCentral()
