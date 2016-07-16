@@ -1,0 +1,16 @@
+# IntelliJ project files
+.idea/
+*.iml
+out/
+
+# Gradle project files
+.gradle/
+build/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Mac files
+.DS_Store
