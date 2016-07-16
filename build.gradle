@@ -1,0 +1,28 @@
+group 'de.sloggran.testingArea'
+version '0.0.1'
+
+apply plugin: 'java'
+apply plugin: 'ecplipse'
+apply plugin: 'application'
+
+//mainClassName = 'place of mainclass'
+
+defaultTasks 'run'
+
+build.dependsOn 'installDist'
+
+repositories {
+    mavenCentral()
+}
+
+/*
+applicationDistribution.from('place')
+    include 'file'
+    into 'destinationfolder'
+ */
+
+dependencies{
+    testCompile group: 'junit', name: 'junit', version: '4.8.2'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '1.3'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '2.0.2-beta'
+}
