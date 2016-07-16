@@ -13,6 +13,9 @@ build.dependsOn 'installDist'
 task wrapper(type: Wrapper){
     gradleVersion = ''
 }
+task getHomeDir << {
+    println gradle.gradleHomeDir
+}
 
 repositories {
     mavenCentral()
