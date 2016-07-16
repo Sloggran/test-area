@@ -11,10 +11,7 @@ defaultTasks 'run'
 build.dependsOn 'installDist'
 
 task wrapper(type: Wrapper){
-    gradleVersion = ''
-}
-task getHomeDir << {
-    println gradle.gradleHomeDir
+    gradleVersion = '2.14'
 }
 
 repositories {
