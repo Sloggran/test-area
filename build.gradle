@@ -1,4 +1,4 @@
-group 'de.sloggran.testingArea'
+group 'de.sloggran.testarea'
 version '0.0.1'
 
 apply plugin: 'java'
